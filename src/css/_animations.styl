@@ -21,3 +21,18 @@
   &.order-exit-active
     transform: translateX(120%)
     padding: 0
+
+.count-enter
+  transition 0.5s
+  transform translateY(100%)
+  &.count-enter-active
+    transform translateY(0)
+
+.count-exit
+  transform translateY(0)
+  transition 0.5s
+  position absolute
+  left 0
+  bottom 0
+  &.count-exit-active
+    transform translateY(-100%)
